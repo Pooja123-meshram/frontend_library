@@ -1,0 +1,52 @@
+/* Container Styling */
+.book-list-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light Gray */
+    min-height: 100vh;
+  }
+  
+  /* Heading */
+  h2 {
+    color: #343a40;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Book List */
+  .book-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Book Item */
+  .book-item {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Book Title */
+  .book-title {
+    color: #007bff;
+  }
+  
+  /* Book Author */
+  .book-author {
+    color: #28a745;
+  }
+  .book-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6c757d;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }  
