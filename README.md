@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+Library Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Library Management System built using React.js for the frontend and Django REST Framework for the backend. It allows administrators to manage books and enables students to view available books.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+Admin Panel: CRUD operations (Create, Read, Update, Delete) for books.
 
-### `npm start`
+Student View: Search and filter books.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Authentication: Secure login system for admin access.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+REST API: Backend built using Django REST Framework (DRF).
 
-### `npm test`
+Database: MySQL integration for storing book records.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+UI: Designed using React for a clean and responsive interface.
 
-### `npm run build`
+Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ensure you have the following installed:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Node.js (For frontend development)
 
-### `npm run eject`
+npm or yarn (Package manager)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Python 3.x (For backend development)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Django & Django REST Framework
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+MySQL (Database)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Installation
 
-## Learn More
+1. Clone the Repository
+2. 
+create project library
+cd library
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git clone https://github.com/Pooja123-meshram/frontend_library.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+3. Install Dependencies (Frontend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm install
 
-### Analyzing the Bundle Size
+3. Start the React App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm start
 
-### Making a Progressive Web App
+This will run the frontend at http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Backend Setup (Django)
 
-### Advanced Configuration
+Navigate to the backend directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+cd backend_library
 
-### Deployment
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+pip install -r requirements.txt
 
-### `npm run build` fails to minify
+Run migrations:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+python manage.py migrate
+
+Start the Django server:
+
+python manage.py runserver
+
+This will run the backend at http://127.0.0.1:8000
+
+Available Scripts
+
+npm start
+
+Runs the frontend in development mode.
+
+npm test
+
+Launches the test runner.
+
+npm run build
+
+Builds the frontend for production.
+
+Deployment
+
+To deploy the frontend, build the project:
+
+npm run build
+
+Then, upload the build/ folder to a hosting service like Vercel, Netlify, or GitHub Pages.
+
+For backend deployment, configure Django with Gunicorn and NGINX, and host it on a cloud provider such as AWS, DigitalOcean, or Heroku.
+
+Learn More
+
+React Documentation: https://reactjs.org/
+
+Django REST Framework: https://www.django-rest-framework.org/
+
+Author
+
+Developed by Pooja Meshram
